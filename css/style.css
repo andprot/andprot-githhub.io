@@ -1,0 +1,137 @@
+body {
+	overflow-x:hidden;
+	position:relative;
+	margin: 0;
+	padding:0;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	font-size: 13px;
+	line-height: 20px;
+	color: #666;
+	background-color:#fff;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	TYPOGRAPHY
+/*-----------------------------------------------------------------------------------*/
+hr {border-color:#ededed;}
+
+ul, ol {padding:0; margin:0;}
+li {padding:0; margin:0; list-style:none;}
+
+p {margin:0 0 20px;}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	HEADER
+/*-----------------------------------------------------------------------------------*/
+header {
+	position:relative;
+	height:80px;
+	background-color:#fff;
+}
+
+
+/* __________ Logo __________ */
+.logo {float:left;}
+.logo a {
+	text-transform:uppercase;
+	line-height:80px;
+	font-size:26px;
+	color:#333;
+}
+.logo a span {
+	display:inline-block;
+	padding-right:18px;
+}
+.logo a span.b1 {font-weight:900;}
+.logo a span.b2 {font-weight:700;}
+.logo a span.b3 {font-weight:400;}
+.logo a span.b4 {font-weight:300;}
+.logo a span.b5 {font-weight:100;}
+
+
+
+
+/* __________ Menu __________ */
+.menu_block {
+	position:fixed;
+	z-index:9999;
+	left:0;
+	top:0;
+	right:0;
+	height:80px;
+	width:100%;
+	background-color:#fff;
+	box-shadow:0 2px 3px rgba(0,0,0,0.1);
+}
+
+.navmenu ul li {
+	position:relative;
+	display:inline-block;
+}
+.navmenu ul li a {
+	display:block;
+	margin:0 0 0 -3px;
+	padding:30px 20px;
+	text-transform:uppercase;
+	font-weight:900;
+	line-height:20px;
+	font-size:13px;
+	color:#666;
+	transition: all 0.3s ease-in-out; 
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.navmenu li:hover a,
+.navmenu li.active a {
+	color:#333;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	SEARCH FORM TOP
+/*-----------------------------------------------------------------------------------*/
+#search-form form {
+	position:relative;
+	height:40px;
+	margin:20px 0 20px 19px;
+	padding-left:49px;
+	border-left:1px solid #ccc;
+	font-family: FontAwesome;
+}
+#search-form form:before {
+	content: "\f002";
+	position:absolute;
+	left:29px;
+	top:-2px;
+	height:40px;
+	line-height:40px;
+	font-size:15px;
+	color:#cccc;
+}
+
+#search-form input {
+	width:42px;
+	margin:0;
+	padding:11px 0;
+	text-transform:none;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+	line-height:20px;
+	font-size: 13px;
+	color: #999;	
+	background: none;
+	border: 0;
+	box-shadow: none;	 
+	transition: all 0.3s ease-in-out; 
+	-webkit-transition: all 0.3s ease-in-out;
+}
+#search-form input:focus {
+	width:140px;
+	padding: 11px 20px 11px 0;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	HOME
+/*-----------------------------------------------------------------------------------*/
+#home {position:relative;}

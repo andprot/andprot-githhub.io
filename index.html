@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Lesson 2</title>
-	</head>
-	<body>
-		<div id="top"></div>
 
-<h1>Курс WEB дизайн</h1>
-		<h2>Заголовок 2</h2>
-		<a href="#top">Вверх</a>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+
+
+    <!-- FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <title>Учебный проект</title>
+</head>
+
+<body>
+    <!-- Основная страница-->
+    <div id="page">
+        <header>
+            <div class="menu_block">
+                <div class="container clearfix">
+
+                    <!-- LOGO -->
+                    <div class="logo pull-left">
+                        <a href="index.html"><span class="b1">w</span><span class="b2">h</span><span
+                                class="b3">i</span><span class="b4">t</span><span class="b5">e</span></a>
+                    </div><!-- //LOGO -->
+
+                    <!-- SEARCH FORM -->
+                    <div id="search-form" class="pull-right">
+                        <form method="get" action="#">
+                            <input type="text" name="Search" value="Search"
+                                onFocus="if (this.value == 'Search') this.value = '';"
+                                onBlur="if (this.value == '') this.value = 'Search';" />
+                        </form>
+                    </div><!-- SEARCH FORM -->
+
+                    <!-- MENU -->
+                    <div class="pull-right">
+                        <nav class="navmenu center">
+                            <ul>
+                                <li class="first active scroll_btn"><a href="#home">Главная</a></li>
+                                <li class="scroll_btn"><a href="#about">О нас</a></li>
+                                <li class="scroll_btn"><a href="#projects">Проекты</a></li>
+                                <li class="scroll_btn"><a href="#team">Команда</a></li>
+                                <li class="scroll_btn"><a href="#news">Новости</a></li>
+                                <li class="scroll_btn last"><a href="#contacts">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div><!-- //MENU -->
+                </div><!-- //MENU BLOCK -->
+            </div>
+        </header>
+
+        		<!-- HOME -->
+		<section id="home" class="padbot0">
+				
+			<!-- Слайдер -->
+			<div class="flexslider top_slider">
+				<ul class="slides">
+					<li class="slide1">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay2 FromTop">Креативный</p>
+							<p class="title2 captionDelay4 FromTop">White</p>
+							<p class="title3 captionDelay6 FromTop">шаблон</p>
+							<p class="title4 captionDelay7 FromBottom">Шаблон подойдет для лендинга.</p>
+						</div>
+						<a class="slide_btn FromRight" href="javascript:void(0);" >Подробнее</a>
+                    </li>
+					<li class="slide2">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay6 FromLeft">Адаптивный</p>
+							<p class="title2 captionDelay4 FromLeft">дизайн</p>
+							<p class="title3 captionDelay2 FromLeft">Любая тема</p>
+							<p class="title4 captionDelay7 FromLeft">Подойдет для корпоративного сайта.</p>
+						</div>
+						<a class="slide_btn FromRight" href="javascript:void(0);" >Подробнее</a>
+					</li>
+					<li class="slide3">
+						<div class="flex_caption1">
+							<p class="title1 captionDelay1 FromBottom">Amazing</p>
+							<p class="title2 captionDelay2 FromBottom">Video</p>
+							<p class="title3 captionDelay3 FromBottom">Background</p>
+							<p class="title4 captionDelay5 FromBottom">The template is suitable for any company and the direction that appreciates style, purity and quality of the web site.</p>
+						</div>
+						<a class="slide_btn FromRight" href="javascript:void(0);" >Подробнее</a>
+					</li>
+				</ul>
+			</div>
+			<div id="carousel">
+				<ul class="slides">
+					<li><img src="images/slider/slide1_bg.jpg" alt="" /></li>
+                    <li><img src="images/slider/slide2_bg.jpg" alt="" /></li>
+					<li><img src="images/slider/slide3_bg.jpg" alt="" /></li>
+				</ul>
+			</div><!-- //Конец слайдера -->
+		</section><!-- //HOME -->
+
+
+    </div>
+    <!--Конец основной страницы-->
+
+</body>
+
 </html>

@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../white/image_slider"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Project"
+	}
+}
